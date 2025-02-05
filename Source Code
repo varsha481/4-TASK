@@ -1,0 +1,10 @@
+def get_sentiment(text):
+analysis = TextBlob(str(text))  # Convert to text (string)
+ if analysis.sentiment.polarity > 0:
+  return "Positive"  # If polarity is > 0, it's positive
+  elif analysis.sentiment.polarity < 0:
+return "Negative"  # If polarity is < 0, it's negative
+  else:
+ return "Neutral"   # If polarity = 0, it's neutral  
+print(df.columns)     
+df.head()
