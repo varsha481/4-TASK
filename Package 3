@@ -1,0 +1,7 @@
+import pandas as pd
+
+csv_file_path = "/content/twitter_training.csv"  # Change the file name if needed
+df = pd.read_csv(csv_file_path)
+
+# Display first few rows
+df.head()
